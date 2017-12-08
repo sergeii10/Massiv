@@ -26,12 +26,12 @@
             /* Задача 4 */
             var arr = [1, 'go', 34, 'run', 4];
             var element = prompt('Введите елемент');
-            function a (arr, element){
+            function search (arr, element){
                 for( var i = 0; i < arr.length; i++){
                  if (arr[i] === element) return i;
                 } return -1;
             }
-            var index = a (arr,element);
+            var index = search (arr,element);
             alert(index);
         </script>
     </body>
