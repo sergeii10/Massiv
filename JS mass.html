@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Page mass</title>
+    </head>
+    <body>
+        <script>
+            /* Задача 1*/
+            var arrliters = ['a', 'b', 'c'];
+            var arrnumbers = [1, 2, 3];
+            var array = arrliters.concat( arrnumbers);
+            console.log(array);
+            /* Задача 3 */
+            var arr = [];
+            while (true) {
+                var value = prompt('Введите число', 0);
+                if (value ===''|| value ===null || isNaN(value)) break;
+                arr.push(+value);
+            }
+            var sum = 0;
+            for(var i = 0; i < arr.length; i++){
+                sum+= arr[i];
+            }
+            console.log(sum);
+            /* Задача 4 */
+            var arr = [1, 'go', 34, 'run', 4];
+            var element = prompt('Введите елемент');
+            function a (arr, element){
+                for( var i = 0; i < arr.length; i++){
+                 if (arr[i] === element) return i;
+                } return -1;
+            }
+            var index = a (arr,element);
+            alert(index);
+        </script>
+    </body>
+</html> 
